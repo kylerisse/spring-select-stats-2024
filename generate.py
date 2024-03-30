@@ -2,8 +2,8 @@
 
 import csv
 import datetime
-#import os
-#import jinja2
+import os
+import jinja2
 
 divisions = [
     "12ug"
@@ -84,30 +84,35 @@ def gender(division):
         return 'female'
     return 'coed'
 
+def write_file(division, teams, deductions, schedule):
+    pastSchedule, futureSchedule = parse_schedule(schedule, teams)
+    outfile = f'output_{ '{:%Y%m%d-%H%M%S}'.format(datetime.datetime.now()) }_{ division }.txt'
+    PWD = os.path.dirname(os.path.abspath(__file__))
+    j2_env = jinja2.Environment(loader=jinja2.FileSystemLoader(PWD))
+    text = j2_env.get_template('template.j2').render(
+        division=division,
+        gender=gender(division),
+        teams=teams,
+        deductions=deductions,
+        tiepct=calc_tiepct(pastSchedule),
+        pastSchedule=pastSchedule,
+        futureSchedule=futureSchedule,
+    )
+    try:
+        fh = open(outfile, 'w')
+        fh.write(text)
+        fh.close()
+    except:
+        print(f'could not write to {outfile}')
+        exit(1)
+    print(f'\n email body written to { outfile }')
+
 def main():
     for division in divisions:
         schedule = read_schedule(f'./schedules/{division}_schedule.csv')
         teams = extract_teams(schedule)
         deductions = read_deductions(teams, f'./schedules/{division}_deductions.csv')
-        pastSchedule, futureSchedule = parse_schedule(schedule, teams)
-        tiepct = calc_tiepct(pastSchedule)
-        outfile = f'output_{ '{:%Y%m%d-%H%M%S}'.format(datetime.datetime.now()) }_{ division }.txt'
-
-        # debug
-        print(f'{gender(division)}')
-        print(f'{schedule}')
-        print(f'{teams}')
-        print(f'{deductions}')
-        print(f'{pastSchedule}')
-        print(f'{futureSchedule}')
-        print(f'{tiepct}')
-        print(f'{outfile}')
-
-    #outfile = "output_{:%Y%m%d-%H%M%S}".format(datetime.datetime.now())
-    #schedule = readSchedule(scheduleFile)
-    #teams = extractTeams(schedule)
-    #matches, tiepct = generateMatches(schedule)
-    #writeFile(teams, matches, tiepct, outfile)
+        write_file(division, teams, deductions, schedule)
 
 if __name__ == "__main__":
     main()
