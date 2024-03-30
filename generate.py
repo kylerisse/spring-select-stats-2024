@@ -9,7 +9,7 @@ divisions = [
     "12ug"
 ]
 
-def readSchedule(file):
+def read_schedule(file):
     try:
         fh = open(file, 'r')
     except:
@@ -25,7 +25,7 @@ def readSchedule(file):
     fh.close()
     return schedule
 
-def extractTeams(schedule):
+def extract_teams(schedule):
     teams = []
     for row in schedule:
         if row[1] not in teams:
@@ -34,7 +34,7 @@ def extractTeams(schedule):
             teams.append(row[2])
     return teams
 
-def readDeductions(teams, file):
+def read_deductions(teams, file):
     try:
         fh = open(file, 'r')
     except:
@@ -56,6 +56,27 @@ def readDeductions(teams, file):
         deductions[row[0]] = int(row[1])
     return deductions
 
+def parse_schedule(schedule, teams):
+    pastSchedule = []
+    futureSchedule = []
+    for row in schedule:
+        if len(row) == 5:
+            pastSchedule.append(row)
+        if len(row) == 3:
+            futureSchedule.append(row)
+        if len(row) not in [3, 5]:
+            print(f'invalid row in schedule {str(row)}')
+            exit(1)
+    return pastSchedule, futureSchedule
+
+def calc_tiepct(pastSchedule):
+    total = len(pastSchedule)
+    ties = 0
+    for row in pastSchedule:
+        if int(row[3]) == int(row[4]):
+            ties += 1
+    return round(ties / total, 2)
+
 def gender(division):
     if division[-1] == 'b':
         return 'male'
@@ -65,14 +86,20 @@ def gender(division):
 
 def main():
     for division in divisions:
-        schedule = readSchedule(f'./schedules/{division}_schedule.csv')
-        teams = extractTeams(schedule)
-        deductions = readDeductions(teams, f'./schedules/{division}_deductions.csv')
+        schedule = read_schedule(f'./schedules/{division}_schedule.csv')
+        teams = extract_teams(schedule)
+        deductions = read_deductions(teams, f'./schedules/{division}_deductions.csv')
+        pastSchedule, futureSchedule = parse_schedule(schedule, teams)
+        tiepct = calc_tiepct(pastSchedule)
 
+        # debug
         print(f'{gender(division)}')
         print(f'{schedule}')
         print(f'{teams}')
         print(f'{deductions}')
+        print(f'{pastSchedule}')
+        print(f'{futureSchedule}')
+        print(f'{tiepct}')
 
     #outfile = "output_{:%Y%m%d-%H%M%S}".format(datetime.datetime.now())
     #schedule = readSchedule(scheduleFile)
