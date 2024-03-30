@@ -1,0 +1,58 @@
+LeagueBegin
+  League: {{ division }} Area 1NR (Sort: Div) (Playoffs: 4)
+    {% for item in teams -%}
+    Team:   {{ item }} (StartPoints: {{ deductions[item] }}) (FairPlay: {{ deductions[item] }})
+    {% endfor %}
+  Kind: rec
+  Sport: soccer
+  Gender: {{ gender }}
+  Country: USA
+  State: CA
+  Level: B
+  Season: 2024 Spring Select (current: True)
+  Author: kylerisse
+  Note:
+  LotteryNote:
+LeagueEnd
+
+SortBegin
+Div: Points, Wins, Goals HeadToHead, Least GoalsAgainst HeadToHead, Least GoalsAgainst, Goals, FairPlay, DrawLots
+SortEnd
+
+RulesBegin
+  PointsForWinInRegulation:  3
+  PointsForWinInOvertime:  3
+  PointsForWinInShootout:  3
+  PointsForLossInRegulation:  0
+  PointsForLossInOvertime:  0
+  PointsForLossInShootout:  0
+  PointsForTie:  1
+  PercentOfGamesThatEndInTie:  {{ tiepct }}
+  PercentOfGamesThatEndInOvertimeWin:  0
+  PercentOfGamesThatEndInShootoutWin:  0
+  HomeFieldAdvantage:  0.53
+  WeightType: Pythagenpat
+  WeightExponent:  0.458
+  WhatDoYouCallATie:  draw
+  WhatDoYouCallLottery:  lottery
+  WhatDoYouCallPromoted:  promoted
+  Promote:  0
+  PromotePlus:  0
+  PromotePlusPercent:  0
+  WhatDoYouCallDemoted:  relegated
+  Demote:  0
+  DemotePlus:  0
+  DemotePlusPercent:  0
+RulesEnd
+
+GamesBegin
+TeamListedFirst: home
+{% for item in pastSchedule -%}
+{{ item[0] }}  {{ item[1] }} {{ item[3] }}-{{ item[4] }} {{ item[2] }}
+{% endfor -%}
+
+{% for item in futureSchedule -%}
+{{ item[0] }}  {{ item[1] }}     {{ item[2] }}
+{% endfor -%}
+
+GamesEnd
