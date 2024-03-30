@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import csv
-#import datetime
+import datetime
 #import os
 #import jinja2
 
@@ -61,7 +61,7 @@ def parse_schedule(schedule, teams):
     futureSchedule = []
     for row in schedule:
         if len(row) == 5:
-            pastSchedule.append(row)
+            pastSchedule.append([row[0], row[1], row[2], int(row[3]), int(row[4])])
         if len(row) == 3:
             futureSchedule.append(row)
         if len(row) not in [3, 5]:
@@ -73,7 +73,7 @@ def calc_tiepct(pastSchedule):
     total = len(pastSchedule)
     ties = 0
     for row in pastSchedule:
-        if int(row[3]) == int(row[4]):
+        if row[3] == row[4]:
             ties += 1
     return round(ties / total, 2)
 
@@ -91,6 +91,7 @@ def main():
         deductions = read_deductions(teams, f'./schedules/{division}_deductions.csv')
         pastSchedule, futureSchedule = parse_schedule(schedule, teams)
         tiepct = calc_tiepct(pastSchedule)
+        outfile = f'output_{ '{:%Y%m%d-%H%M%S}'.format(datetime.datetime.now()) }_{ division }.txt'
 
         # debug
         print(f'{gender(division)}')
@@ -100,6 +101,7 @@ def main():
         print(f'{pastSchedule}')
         print(f'{futureSchedule}')
         print(f'{tiepct}')
+        print(f'{outfile}')
 
     #outfile = "output_{:%Y%m%d-%H%M%S}".format(datetime.datetime.now())
     #schedule = readSchedule(scheduleFile)
