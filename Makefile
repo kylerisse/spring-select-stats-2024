@@ -3,3 +3,6 @@ lint:
 
 test:
 	pytest *.py
+
+build:
+	python3 generate.py

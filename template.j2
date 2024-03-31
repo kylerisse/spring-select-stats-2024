@@ -1,7 +1,7 @@
 LeagueBegin
-  League: {{ division }} Area 1NR (Sort: Div) (Playoffs: 4)
+  League: Area 1NR {{ division }} (Sort: Div) (Playoffs: 4)
     {% for item in teams -%}
-    Team:   {{ item }} (StartPoints: {{ deductions[item] }}) (FairPlay: {{ deductions[item] }})
+    Team:   {{ item }} (StartPoints: {{ deductions[item]['sendoffs'] + deductions[item]['reporting'] }}) (FairPlay: {{ deductions[item]['sendoffs'] }})
     {% endfor %}
   Kind: rec
   Sport: soccer
@@ -11,12 +11,12 @@ LeagueBegin
   Level: B
   Season: 2024 Spring Select (current: True)
   Author: kylerisse
-  Note:
+  Note: https://github.com/kylerisse/spring-select-stats-2024
   LotteryNote:
 LeagueEnd
 
 SortBegin
-Div: Points, Wins, Goals HeadToHead, Least GoalsAgainst HeadToHead, Least GoalsAgainst, Goals, FairPlay, DrawLots
+Div: Points, Wins, GoalsFor HeadToHead, Least GoalsAgainst HeadToHead, Least GoalsAgainst, GoalsFor, FairPlay, DrawLots
 SortEnd
 
 RulesBegin
