@@ -1,7 +1,7 @@
 LeagueBegin
   League: {{ division }} Area 1NR (Sort: Div) (Playoffs: 4)
     {% for item in teams -%}
-    Team:   {{ item }} (StartPoints: {{ deductions[item] }}) (FairPlay: {{ deductions[item] }})
+    Team:   {{ item }} (StartPoints: {{ deductions[item]['sendoffs'] + deductions[item]['reporting'] }}) (FairPlay: {{ deductions[item]['sendoffs'] }})
     {% endfor %}
   Kind: rec
   Sport: soccer

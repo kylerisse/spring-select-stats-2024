@@ -44,16 +44,21 @@ def read_deductions(teams, file):
 
     deductions = {}
     for team in teams:
-        deductions[team] = 0
-
+        deductions[team] = {
+            'sendoffs': 0,
+            'reporting': 0,
+        }
     for row in reader:
-        if len(row) != 2:
+        if len(row) != 3:
             print(f'bad row in {file} {str(row)}')
             exit(1)
         if row[0] not in teams:
             print(f'invalid team name in {file} {str(row)}')
             exit(1)
-        deductions[row[0]] = int(row[1])
+        deductions[row[0]] = {
+            'sendoffs': int(row[1]),
+            'reporting': int(row[2]),
+        }
     return deductions
 
 def parse_schedule(schedule, teams):
