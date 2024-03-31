@@ -1,0 +1,79 @@
+# date,home,away,home goals,away goals
+
+# Week One
+2/28/24,Beaumont,Mountains 1,9,0
+2/28/24,Hemet,Jurupa,11,0
+3/1/24,Jurupa,French Valley,3,0
+3/1/24,Corona,Mountains 2,8,0
+3/1/24,Riverside,Moreno Valley,0,2
+3/2/24,Menifee,Perris,2,3
+
+# Week Two
+3/5/24,Perris,Mountains 2,4,0
+3/6/24,Hemet,Menifee,9,1
+3/8/24,Corona,Mountains 1,10,1
+3/8/24,Jurupa,Moreno Valley,2,8
+
+# Week Three
+3/11/24,Moreno Valley,Perris,9,0
+3/13/24,Riverside,Hemet,1,2
+3/16/24,French Valley,Beaumont,0,2
+3/16/24,Corona,Menifee,0,2
+3/17/24,Mountains 2,Mountains 1,0,3
+
+# Week Four
+3/20/24,French Valley,Hemet,1,4
+3/22/24,Beaumont,Moreno Valley,1,1
+3/22/24,Menifee,Mountains 2,6,1
+3/23/24,Jurupa,Perris,0,3
+3/23/24,Corona,Riverside,1,4
+
+# Week Five
+3/27/24,Hemet,Mountains 1,15,0
+3/27/24,Beaumont,Corona,4,3
+3/28/24,Riverside,Perris,7,1
+3/29/24,Jurupa,Mountains 2,7,0
+
+# Week Six
+4/9/24,Menifee,Riverside
+4/10/24,Beaumont,Jurupa
+4/11/24,Menifee,Mountains 1
+4/11/24,French Valley,Mountains 2
+4/12/24,Moreno Valley,Corona
+4/13/24,Perris,Hemet
+
+# Week Seven
+4/16/24,Perris,Mountains 1
+4/17/24,Hemet,Mountains 2
+4/18/24,Riverside,French Valley
+4/19/24,Corona,Jurupa
+4/19/24,Riverside,Beaumont
+4/20/24,Menifee,Moreno Valley
+
+# Week Eight
+4/22/24,Jurupa,Riverside
+4/24/24,Perris,French Valley
+4/27/24,Menifee,French Valley
+4/27/24,Hemet,Corona
+4/27/24,Mountains 1,Moreno Valley
+4/27/24,Beaumont,Mountains 2
+
+# Week Nine
+4/29/24,Moreno Valley,Hemet
+5/4/24,Perris,Beaumont
+5/4/24,French Valley,Corona
+5/4/24,Mountains 2,Riverside
+5/4/24,Mountains 1,Jurupa
+
+# Week Ten
+5/6/24,Moreno Valley,Mountains 2
+5/8/24,French Valley,Mountains 1
+5/8/24,Jurupa,Menifee
+5/11/24,Perris,Corona
+5/11/24,Beaumont,Hemet
+5/11/24,Mountains 1,Riverside
+
+
+# Need Reschedule
+5/12/24,French Valley,Moreno Valley
+5/12/24,Menifee,Beaumont

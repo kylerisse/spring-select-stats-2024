@@ -6,7 +6,8 @@ import os
 import jinja2
 
 divisions = [
-    "12ug"
+    "12ug",
+    "14ub",
 ]
 
 def read_schedule(file):
