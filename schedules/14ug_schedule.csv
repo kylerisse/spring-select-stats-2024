@@ -1,0 +1,69 @@
+# date,home,away,home goals,away goals
+
+# Week One
+2/26/24,Hemet,Redlands,1,0
+2/29/24,Hemet,Corona,1,1
+3/2/24,Perris,Mountains,3,1
+3/2/24,Menifee,Moreno Valley,1,0
+
+# Week Two
+3/8/24,Moreno Valley,Hemet,3,0
+3/9/24,Beaumont,Perris,1,3
+3/9/24,Menifee,Corona,0,1
+3/9/24,Redlands,French Valley,2,1
+3/9/24,Redlands,Mountains,0,2
+
+# Week Three
+3/15/24,Moreno Valley,Redlands,1,2
+3/15/24,Perris,Corona,1,2
+3/16/24,Menifee,Perris,5,0
+3/16/24,French Valley,Hemet,1,1
+3/16/24,Beaumont,Mountains,3,3
+
+# Week Four
+3/20/24,Beaumont,Moreno Valley,1,3
+3/23/24,Perris,Redlands,3,1
+3/23/24,Corona,French Valley,5,0
+3/23/24,Beaumont,Menifee,2,1
+
+# Week Five
+3/28/24,Hemet,Perris,4,2
+
+# Week Six
+4/8/24,Moreno Valley,Corona
+4/10/24,Hemet,Menifee
+4/13/24,Redlands,Beaumont
+4/13/24,French Valley,Mountains
+
+# Week Seven
+4/18/24,Perris,Moreno Valley
+4/18/24,Menifee,French Valley
+4/19/24,Corona,Mountains
+
+
+# Week Eight
+4/24/24,Hemet,Mountains
+4/26/24,Moreno Valley,Beaumont
+4/26/24,Corona,Perris
+4/26/24,Menifee,Mountains
+4/27/24,French Valley,Redlands
+4/28/24,Redlands,Hemet
+
+# Week Nine
+5/1/24,Corona,Hemet
+5/1/24,Beaumont,French Valley
+5/3/24,Moreno Valley,Menifee
+5/4/24,Perris,Mountains
+
+# Week Ten
+5/7/24,Hemet,Beaumont
+5/9/24,French Valley,Beaumont
+5/10/24,Moreno Valley,Mountains
+5/10/24,Corona,Redlands
+5/11/24,Perris,French Valley
+5/11/24,Menifee,Mountains
+
+# Need Reshedule
+5/12/24,Redlands,Menifee
+5/12/24,French Valley,Moreno Valley
+5/12/24,Corona,Beaumont
