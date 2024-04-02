@@ -10,6 +10,8 @@ divisions = [
     "12ug",
     "14ub",
     "14ug",
+    "16ub",
+    "16ug",
 ]
 
 def read_schedule(file):
@@ -83,7 +85,7 @@ def calc_tiepct(pastSchedule):
     for row in pastSchedule:
         if row[3] == row[4]:
             ties += 1
-    return round(ties / total, 2)
+    return round(ties / total, 2) if total != 0 else 0
 
 def gender(division):
     if division[-1] == 'b':
