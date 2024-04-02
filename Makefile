@@ -1,8 +1,11 @@
 lint:
-	pylint *.py
+	nix-shell --command 'pylint *.py'
 
 test:
-	pytest *.py
+	nix-shell --command 'pytest *.py'
 
-build:
-	python3 generate.py
+build: clean
+	nix-shell --command 'python3 generate.py'
+
+clean:
+	rm -v output_* || exit 0
