@@ -6,6 +6,7 @@ Script to generate and maintain [Sports Club Stats](http://www.sportsclubstats.c
 - [12U Girls](http://www.sportsclubstats.com/You/Area1NR12ug.html)
 - [14U Boys](http://www.sportsclubstats.com/You/Area1NR14ub.html)
 - [14U Girls](http://www.sportsclubstats.com/You/Area1NR14ug.html)
+- [16U Boys](http://www.sportsclubstats.com/You/Area1NR16ub.html)
 
 For the most part, the rules match those defined for the league. Where they differ is when dealing with standings tiebreakers and how points deductions are handled. The cases where these will have any impact should be very rare.
 
