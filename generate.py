@@ -11,6 +11,7 @@ divisions = [
     "14ub",
     "14ug",
     "16ub",
+    "16ug",
 ]
 
 def read_schedule(file):
