@@ -6,6 +6,7 @@ import os
 import jinja2
 
 divisions = [
+    "10ug",
     "12ub",
     "12ug",
     "14ub",

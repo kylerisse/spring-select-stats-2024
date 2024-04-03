@@ -2,6 +2,7 @@
 
 Script to generate and maintain [Sports Club Stats](http://www.sportsclubstats.com) league data for the AYSO Section 1 Areas N and R [2024 Spring Select](https://ayso.bluesombrero.com/Default.aspx?tabid=948335) season.
 
+- [10U Girls](http://www.sportsclubstats.com/You/Area1NR10ug.html)
 - [12U Boys](http://www.sportsclubstats.com/You/Area1NR12ub.html)
 - [12U Girls](http://www.sportsclubstats.com/You/Area1NR12ug.html)
 - [14U Boys](http://www.sportsclubstats.com/You/Area1NR14ub.html)
