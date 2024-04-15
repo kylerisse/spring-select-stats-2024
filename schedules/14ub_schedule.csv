@@ -35,16 +35,17 @@
 3/29/24,Jurupa,Mountains 2,7,0
 
 # Week Six
-4/9/24,Menifee,Riverside
-4/10/24,Beaumont,Jurupa
+4/9/24,Menifee,Riverside,3,4
+4/10/24,Beaumont,Jurupa,4,0
 4/11/24,Menifee,Mountains 1
-4/11/24,French Valley,Mountains 2
-4/12/24,Moreno Valley,Corona
-4/13/24,Perris,Hemet
+4/11/24,French Valley,Mountains 2,6,0
+4/12/24,Moreno Valley,Corona,7,1
+4/13/24,Perris,Hemet,0,4
 
 # Week Seven
 4/16/24,Perris,Mountains 1
 4/17/24,Hemet,Mountains 2
+4/17/24,Menifee,Beaumont
 4/18/24,Riverside,French Valley
 4/19/24,Corona,Jurupa
 4/19/24,Riverside,Beaumont
@@ -60,8 +61,9 @@
 
 # Week Nine
 4/29/24,Moreno Valley,Hemet
+5/1/24,French Valley,Corona
+5/2/24,French Valley,Moreno Valley
 5/4/24,Perris,Beaumont
-5/4/24,French Valley,Corona
 5/4/24,Mountains 2,Riverside
 5/4/24,Mountains 1,Jurupa
 
@@ -72,8 +74,3 @@
 5/11/24,Perris,Corona
 5/11/24,Beaumont,Hemet
 5/11/24,Mountains 1,Riverside
-
-
-# Need Reschedule
-5/12/24,French Valley,Moreno Valley
-5/12/24,Menifee,Beaumont

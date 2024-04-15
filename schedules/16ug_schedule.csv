@@ -15,8 +15,7 @@
 3/28/24,Menifee,Jurupa,1,2
 
 # Week Five
-4/8/24,Jurupa,Hemet
-4/9/24,Menifee,Riverside
+4/8/24,Jurupa,Hemet,0,4
 
 # Week Six
 4/15/24,Jurupa,Riverside
@@ -35,3 +34,6 @@
 5/7/24,Menifee,Hemet
 5/9/24,Hemet,Riverside
 5/11/24,Riverside,Jurupa
+
+# Need Reschedule
+5/12/24,Menifee,Riverside
