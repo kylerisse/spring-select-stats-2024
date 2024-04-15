@@ -31,18 +31,18 @@
 
 # Week Six
 4/8/24,Moreno Valley,Corona,0,6
-4/10/24,Hemet,Menifee
+4/10/24,Hemet,Menifee,3,1
+4/13/24,French Valley,Mountains,1,3
 4/13/24,Redlands,Beaumont
-4/13/24,French Valley,Mountains
 
 # Week Seven
 4/18/24,Perris,Moreno Valley
 4/18/24,Menifee,French Valley
 4/19/24,Corona,Mountains
 
-
 # Week Eight
 4/24/24,Hemet,Mountains
+4/25/24,French Valley,Moreno Valley
 4/26/24,Moreno Valley,Beaumont
 4/26/24,Corona,Perris
 4/26/24,Menifee,Mountains
@@ -50,6 +50,7 @@
 4/28/24,Redlands,Hemet
 
 # Week Nine
+4/30/24,Redlands,Menifee
 5/1/24,Corona,Hemet
 5/1/24,Beaumont,French Valley
 5/3/24,Moreno Valley,Menifee
@@ -64,6 +65,4 @@
 5/11/24,Menifee,Mountains
 
 # Need Reshedule
-5/12/24,Redlands,Menifee
-5/12/24,French Valley,Moreno Valley
 5/12/24,Corona,Beaumont

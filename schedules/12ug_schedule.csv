@@ -33,11 +33,13 @@
 
 # Week Six
 4/8/24,Redlands,Riverside,4,0
-4/10/24,Menifee,Perris
-4/13/24,Hemet,Redlands
-4/13/24,Moreno Valley,Corona
+4/10/24,Menifee,Perris,0,0
+4/10/24,Hemet,Mountains,0,3
+4/13/24,Hemet,Redlands,1,3
+4/13/24,Moreno Valley,Corona,0,8
 
 # Week Seven
+4/17/24,Menifee,Beaumont
 4/17/24,Perris,Hemet
 4/20/24,French Valley,Menifee
 4/20/24,Riverside,Moreno Valley
@@ -67,7 +69,5 @@
 5/11/24,Corona,Redlands
 
 # Need Reschedule
-5/12/24,Hemet,Mountains
-5/12/24,Menifee,Beaumont
 5/12/24,Corona,French Valley
 5/13/24,Moreno Valley,Mountains
