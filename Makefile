@@ -4,7 +4,7 @@ lint:
 test:
 	nix-shell --command 'pytest *.py'
 
-build: clean
+build: clean lint
 	nix-shell --command 'python3 generate.py'
 
 clean:
