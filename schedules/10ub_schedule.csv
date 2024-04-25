@@ -60,10 +60,9 @@
 4/19/24,Corona 2,Riverside,0,8
 4/19/24,Corona 1,Hemet 2,7,1
 4/20/24,Jurupa,Corona 3,2,1
-4/20/24,Moreno Valley 2,Menifee
 
 # Week Eight
-4/24/24,French Valley,Corona 1
+4/24/24,French Valley,Corona 1,2,8
 4/27/24,Beaumont,French Valley
 4/27/24,Jurupa,Menifee
 4/27/24,Redlands,Perris
@@ -73,6 +72,7 @@
 4/27/24,Corona 1,Moreno Valley 2
 4/27/24,Murrieta,Beaumont
 4/28/24,Redlands,Moreno Valley 1
+4/28/24,Moreno Valley 2,Menifee
 
 # Week Nine
 5/3/24,Murrieta,Jurupa
@@ -83,6 +83,7 @@
 5/4/24,French Valley,Corona 2
 5/4/24,Corona 3,Murrieta
 5/4/24,Moreno Valley 2,Moreno Valley 1
+5/5/24,Corona 3,Beaumont
 
 # Week Ten
 5/11/24,Beaumont,Redlands
@@ -94,5 +95,4 @@
 5/11/24,Moreno Valley 1,Corona 1
 
 # Need Reschedule
-5/12/24,Corona 3,Beaumont
 5/12/24,Corona 2,Hemet 2
