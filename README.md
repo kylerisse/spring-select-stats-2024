@@ -1,5 +1,7 @@
 # spring-select-stats-2024
 
+> 2024-04-27 - It appears Sports Club Stats has gone offline. I have no way of knowing whether or not this is permanent.
+
 Script to generate and maintain [Sports Club Stats](http://www.sportsclubstats.com) league data for the AYSO Section 1 Areas N and R [2024 Spring Select](https://ayso.bluesombrero.com/Default.aspx?tabid=948335) season.
 
 - [10U Boys](http://www.sportsclubstats.com/You/Area1NR10ub.html)
